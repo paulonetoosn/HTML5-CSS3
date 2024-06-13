@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Áudio no site</title>
+</head>
+<body>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Para incorporar áudio em uma página HTML5, você pode usar a tag <&lt;audio&gt;>.</p>
+    <p>Led Zeppelin - Since I've Been Loving You</p>
+    
+    <audio src="Led Zeppelin - Since I've Been Loving You (Live at Madison Square Garden 1973) [Official Video].mp3" controls autoplay ></audio>
+
+    <ul>
+        <li>A tag <&lt;audio&gt;> é usada para definir o elemento de áudio.</li>
+        <li>O atributo controls adiciona controles de reprodução (como play, pause, volume) ao áudio.</li>
+        <li>A tag <&lt;source&gt;> é usada para especificar as fontes do áudio. Você pode ter várias fontes para garantir a compatibilidade com diferentes navegadores. No exemplo acima, o áudio é "audio.mp3", e o tipo do arquivo é especificado como "audio/mpeg". Você pode adicionar outras fontes para diferentes tipos de arquivos de áudio.</li>
+        <li>O texto dentro da tag <&lt;audio&gt;> é exibido caso o navegador não consiga reproduzir o áudio.</li>
+        <li>Certifique-se de que o arquivo de áudio esteja localizado no mesmo diretório que seu arquivo HTML ou especifique o caminho correto para o áudio no atributo src da tag <&lt;source&gt;>.</li></ul>
+        
+        <h2>Assim ficou o código</h2>    
+       
+        <pre>
+            <&lt;audio src="Led Zeppelin - Since I've Been Loving You (Live at Madison Square Garden 1973) [Official Video].
+            mp3" <mark>controls</mark> autoplay &gt;><&lt;/audio&gt;>
+        </pre>
+
+        O atributo <mark>controls</mark> é utilizado na tag <&lt;audio&gt;> ou <&lt;video&gt;> em HTML para exibir controles padrão de reprodução de mídia para o usuário. Quando você inclui o atributo controls em uma tag <&lt;audio&gt;> ou <&lt;video&gt;>, o navegador automaticamente exibe uma barra de reprodução com botões de controle, como play, pause, volume, entre outros, permitindo que os usuários interajam com o conteúdo de áudio ou vídeo.
+
+            Aqui está um exemplo simples:
+            
+            <pre>
+                <&lt;audio <mark>controls</mark>&gt;>
+                    <&lt;source src="audio.mp3" type="audio/mpeg"&gt;>
+                    Seu navegador não suporta o elemento de áudio.
+                </audio>
+            </pre>
+    
+</body>
+</html>

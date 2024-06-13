@@ -1,0 +1,22 @@
+<style>
+        body{
+            font-size: 20px;
+            background-color: black; 
+            font-family: Arial, Helvetica, sans-serif
+        
+        }
+        h1{
+            color: blueviolet;
+        }
+        h2{
+            color: aliceblue;
+        }
+        p{
+            color: aliceblue; 
+        }
+
+    </style>
+
+    <p><a href="pagina02.html">Ir para página 2</a></p>
+
+    charset="UTF-8">

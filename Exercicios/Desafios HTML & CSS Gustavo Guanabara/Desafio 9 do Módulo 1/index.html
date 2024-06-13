@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 09</title>
+</head>
+<body>
+    <ul>
+        <h1>Desafio 09</h1>
+        <li>
+            <p>Centralizar vídeos</p>
+        </li>
+        <li>
+            <p>Incorporando videos extenos no html5</p>
+        </li>
+        <li>
+            <p>Assim ficou o código para incorporar os videos externos e centralizar</p>
+        </li>
+    </ul>
+
+    <hr>
+        <code>
+            <pre>
+                <&lt;div style="display: flex; justify-content: center;"&gt;>
+                    <&lt;div style="margin-right: 10px;"&gt;>
+                        <&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/F7KzJ7e6EAc?si=SaOBp8t4o2p9c3f5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen><&lt;/iframe&gt;>
+                    <&lt;/div&gt;>
+            </pre>
+                <pre>
+                    <&lt;div&gt;>
+                        <&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/8mei6uVttho?si=NYvhtTN7HXIgQXcy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen><&lt;/iframe&gt;>
+                    <&lt;/div&gt;>
+                </pre>
+            </div>
+        </code>
+    <hr>
+
+    <h2>Explicação sobre o código</h2>
+    <ul>
+<li><strong>Divisão em blocos:</strong> O código está dividido em quatro blocos, cada um contendo dois vídeos do YouTube.</li>
+<li><strong>Flexbox:</strong> Cada bloco é envolto por uma <mark><&lt;div&gt;></mark> com estilo <mark>display: flex; justify-content: center;</mark>. Isso utiliza o modelo de layout flexível do CSS para centralizar os vídeos horizontalmente na página.</li>
+<li><strong>Estilo do primeiro vídeo:</strong> Cada vídeo é colocado dentro de uma <mark><&lt;div&gt;></mark> adicional. O primeiro vídeo em cada bloco tem um estilo <mark>margin-right: 10px;</mark>, que adiciona uma margem à direita para criar um espaço entre os vídeos.</li>
+<li><strong>Incorporação de vídeos do YouTube:</strong> Cada vídeo é incorporado usando a tag <mark><&lt;iframe&gt;></mark>. O atributo <mark>src</mark> contém o link incorporado do vídeo do YouTube. Outros atributos, como <mark>width, height, title, allow, referrerpolicy, frameborder e allowfullscreen</mark>, controlam vários aspectos da incorporação do vídeo, como dimensões, título, permissões e comportamento.</li>
+<li><strong>Permissões de reprodução:</strong> O atributo <mark>allow</mark> especifica quais funcionalidades são permitidas no vídeo incorporado, como <mark>autoplay</mark>, <mark>picture-in-picture e fullscreen</mark>. Isso determina como o vídeo pode ser reproduzido e interagido pelo usuário.</li>
+<li><strong>Política de referência:</strong> O atributo <mark>referrerpolicy</mark> especifica como o navegador deve enviar o cabeçalho HTTP Referer ao carregar o recurso do vídeo. Neste caso, está definido como <mark>strict-origin-when-cross-origin</mark>, o que significa que o referer será enviado apenas para solicitações no mesmo site, mas não para solicitações entre diferentes sites.</li>
+<li><strong>No geral, este código incorpora múltiplos vídeos do YouTube em uma página HTML e os organiza lado a lado usando o modelo de layout flexível. Cada vídeo pode ser reproduzido e interagido pelos usuários de acordo com as permissões definidas.</strong></li>
+
+
+
+
+    </ul>
+
+
+
+
+<div style="display: flex; justify-content: center;">
+        <div style="margin-right: 10px;">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/F7KzJ7e6EAc?si=SaOBp8t4o2p9c3f5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/8mei6uVttho?si=NYvhtTN7HXIgQXcy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+    </div>
+    <div style="display: flex; justify-content: center;">
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ofktsne-utM?si=k1LPZftwVGR5tIyi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/xEKo29OWILE?si=jKjaE4rx1RaLFp_6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            
+        </div>
+
+
+    </div>
+    
+
+    
+    
+
+
+
+
+
+
+
+   
+</body>
+</html>

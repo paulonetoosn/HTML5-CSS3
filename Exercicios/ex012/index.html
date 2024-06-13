@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio</title>
+</head>
+<body>
+    <h1>Vídeos em hospedagem própria</h1>
+
+<video controls width="640" height="360" src="videos/Led Zeppelin - Since I've Been Loving You (Live at Madison Square Garden 1973) [Official Video].mp4"></video>
+
+<h1>Assim ficou o código</h1> 
+
+<ul>
+    <li>A tag <&lt;video&gt;> é usada para definir o elemento de vídeo.</li>
+    <li>O atributo <mark>controls</mark> adiciona controles de reprodução (como play, pause, volume) ao vídeo.</li>
+    <li>O atributo width e height define a largura e altura do vídeo, respectivamente.</li>
+    <li>A tag <&lt;source&gt;> é usada para especificar as fontes do vídeo. Você pode ter várias fontes para garantir a compatibilidade com diferentes navegadores. No exemplo abaixo, o vídeo é "video.mp4", e o tipo do arquivo é especificado como "video/mp4". Você pode adicionar outras fontes para diferentes tipos de arquivos de vídeo.</li>
+    <li>O texto dentro da tag <&lt;video&gt;> é exibido caso o navegador não consiga reproduzir o vídeo.</li>
+    <li>Certifique-se de que o vídeo esteja localizado no mesmo diretório que seu arquivo HTML ou especifique o caminho correto para o vídeo no atributo src da tag <&lt;source&gt;>.</li>
+</ul>
+
+<pre>
+        <&lt;video controls width="640" height="360" &gt;>
+        <&lt;source src="video.mp4" type="video/mp4">
+        Seu navegador não suporta o elemento de vídeo.
+        </videogt;>
+</pre>
+
+<hr>
+<h1>Incorporação de vídeos externos</h1>
+Para incorporar vídeos externos em HTML5, você pode usar a tag <&lt;video&gt;> com a tag <&lt;source&gt;> para especificar a URL do vídeo. Aqui está um exemplo de como fazer isso:
+
+<pre>
+    <&lt;video controls width="640" height="360"&gt;>
+        <&lt;source src="URL_DO_VIDEO" type="TIPO_DO_VIDEO"&gt;>
+        Seu navegador não suporta o elemento de vídeo.
+    </video>
+</pre>
+
+<ul>
+    
+        <li>Substitua "URL_DO_VIDEO" pela URL do vídeo externo que você deseja incorporar e "TIPO_DO_VIDEO" pelo tipo de mídia do vídeo (por exemplo, "video/mp4" para MP4, "video/webm" para WebM, etc.).</li>
+        
+        <li>Por exemplo, se você quiser incorporar um vídeo do YouTube, você pode usar o recurso de incorporação do YouTube e colocar o código fornecido dentro da tag <&lt;source&gt;>.</li>
+    
+</ul>
+
+    <pre>
+        <&lt;video controls width="640" height="360"&gt;>
+            <&lt;source src="URL_DO_VIDEO_YOUTUBE" type="video/youtube"&gt;>
+            Seu navegador não suporta o elemento de vídeo.
+        </video&gt;>
+    </pre>
+    
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8E09XJGLpGc?si=IO2y1EJRLpeOcvmS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;></iframe>
+
+    
+</body>
+</html>

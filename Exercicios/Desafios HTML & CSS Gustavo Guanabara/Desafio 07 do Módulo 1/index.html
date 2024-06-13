@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias html</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositvos difrente ou simplesmente aumente e dimunua o tamanho do seu navegador</p>
+
+    <ol type="I"> 
+            <p><li>A tag <&lt;picture&gt;> envolve as fontes de imagem alternativas e a tag <&lt;img&gt;>.</li>
+            <li>A tag <&lt;source&gt;> é usada para especificar diferentes versões da imagem com base na largura da tela (media="(max-width: 600px)" para telas menores que 600px e media="(min-width: 601px)" para telas maiores ou iguais a 601px) e fornece o caminho para cada versão usando o atributo srcset.</li>
+            <li>A tag <&lt;img&gt;> é usada como fallback para navegadores que não suportam a tag <&lt;picture&gt;> ou não atendem às condições especificadas nas tags <&lt;source&gt;>. O atributo src fornece o caminho para a imagem a ser exibida se nenhum dos <&lt;source&gt;> for correspondido.</li>
+            <li>Com esse código, o navegador escolherá automaticamente a versão correta da imagem com base nas condições de mídia especificadas nas tags <source>, garantindo que a imagem seja exibida de forma adequada em diferentes tamanhos de tela e dispositivos.</p></li>
+
+            
+    </ol>
+
+    <p>
+        <li>Para exibir esse código HTML como texto em uma página da web sem que ele seja interpretado como marcação HTML, você pode usar a tag<&lt;pre&gt;></li>
+        
+        <pre>
+        <&lt;picture&gt;>
+        <&lt;source media="(max-width: 700px)" srcset="Imagens/foto-a1.png" type="image/png"&gt;>
+        <&lt;source media="(max-width: 1000px)" srcset="Imagens/foto-a2.png" type="image/png"&gt;>
+        <&lt;img src="Imagens/foto-a3.png" alt="Imagem flexivel"&gt;>
+        <&lt;/picture&gt;>
+        </pre>
+    </p>
+                
+    <picture>
+
+    <source media="(max-width: 700px)" srcset="Imagens/foto-a1.png" type="image/png">
+    <source media="(max-width: 1000px)" srcset="Imagens/foto-a2.png" type="image/png">
+    <img src="Imagens/foto-a3.png" alt="Imagem flexivel">
+
+    </picture>
+    
+    
+</body>
+</html>
